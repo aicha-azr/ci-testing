@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "20"  # Choisissez la version de Node.js que vous utilisez dans votre projet
+
+cache:
+  directories:
+    - node_modules  # Cache les dépendances npm pour accélérer les builds
+
+install:
+  - npm install  # Installe les dépendances du projet
+
+script:
+  - npm test  # Exécute les tests de votre projet
+
